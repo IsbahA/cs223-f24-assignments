@@ -1,7 +1,7 @@
 /***************************************************
  * exclaim.c
  * Author: Isbah Ameer
- * Date: September 13th, 2024
+ * Date: September 12th, 2024
  * Turning words into exclaimations
  */
 
@@ -11,7 +11,7 @@
 
 int main(){
   char userInput[32];
-  char symbol[] = {'@', '#', '!', '*'};
+  char symbol[4] = {'@', '#', '!', '*'};
   int n;
 
   printf("Enter a word: ");
