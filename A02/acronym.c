@@ -1,5 +1,5 @@
 /***************************************************
- * exclaim.c
+ * acronym.c
  * Author: Isbah Ameer
  * Date: September 13th, 2024
  * Creating acronyms from a sentence
