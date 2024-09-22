@@ -45,7 +45,7 @@ int main() {
     }
     
     char buffer[256];
-    fgets(buffer, sizeof(buffer), infile);  // Reading the first line (assuming this line contains the number of songs)
+    fgets(buffer, sizeof(buffer), infile);
     int num_songs = atoi(strtok(buffer, ","));
     
     Song *songs = (Song *)malloc(num_songs * sizeof(Song));
