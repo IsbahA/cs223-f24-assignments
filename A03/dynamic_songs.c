@@ -27,7 +27,7 @@ void format_duration(int duration, int *minutes, int *seconds) {
 }
 void printSongList(Song *songs, int num_songs) {
     printf("\n=======================\n");
-    for (int i = 0; i < num_songs; i++) {
+    for (int i = 1; i < num_songs; i++) {
         int minutes, seconds;
         format_duration(songs[i].duration, &minutes, &seconds);
         printf("%d) %-28s artist: %-20s duration %d:%02d D: %.3f E: %.3f T: %.3f V: %.3f\n", 
