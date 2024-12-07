@@ -10,7 +10,6 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <time.h>
-#include <math.h>
 #include <string.h>
 #include "rand.h"
 
@@ -56,11 +55,11 @@ void memstats(struct chunk *freelist, void *buffer[], int len) {
     void *heap_start = (void *)freelist;
     int total_heap_allocated = (char *)heap_top - (char *)heap_start;
 
-    // calculate underutilized memory
+    //calculate underutilized memory
     int underutilized_memory = total_heap_allocated - mused;
     double underutilized_percent = (double)underutilized_memory / total_heap_allocated;
 
-    // Print statistics
+    //print statistics
     printf("Total blocks: %d Free blocks: %d Used blocks: %d\n", btotal, bfree, bused);
     printf("Total memory allocated: %d Free memory: %d Used memory: %d\n", mtotal, mfree, mused);
     printf("Underutilized memory: %.2f\n", underutilized_percent);
